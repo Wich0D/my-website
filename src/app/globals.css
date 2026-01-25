@@ -1,8 +1,41 @@
 @import "tailwindcss";
 
 @theme{
+  /*Colors*/
   --color-main-div: #3c4296;
+  /*Animations*/
+  --anymate-typing: typing 3.5s steps(40,end) forwards, blink .75s step-end 4;
+  --anymate-typing-last: typing 3.5 steps(40,end) forwards, blink .75s step-end infinite;
 }
+@keyframes typing {
+  from {
+    width: 0;
+    color: white; 
+    border-color: white; 
+  }
+  to {
+    width: 100%;
+    color: white;
+    border-color: transparent; 
+  }
+}
+@keyframes blink {
+  from, to {border-color: transparent}
+  50% {border-color: white}
+}
+
+.terminal-text{
+  color: transparent;
+  overflow: hidden;
+  border-right: .15em solid transparent;
+  white-space: nowrap;
+  letter-spacing: 0.1em;
+  animation: var(--anymate-typing);
+}
+.terminal-text-end{
+  animation: var(--anymate-typing-last);
+}
+
 :root {
   --background: #1f305b;
   --textmaincolor: #fff;

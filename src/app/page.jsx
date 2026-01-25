@@ -1,10 +1,11 @@
-import UnderConstruction from "../components/UnderConstruction";
+import IntroductionCard from "../components/homePage/IntroductionCard";
+//import UnderConstruction from "../components/UnderConstruction";
 
 
 function HomePage() {
     return ( 
-        <main>
-            <UnderConstruction/>
+        <main className="flex justify-center items-center min-h-screen">
+            <IntroductionCard/>
         </main>
      );
 }
