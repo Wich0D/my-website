@@ -2,15 +2,16 @@ import IntroductionCard from "../components/homePage/introduction_section/Introd
 //import UnderConstruction from "../components/UnderConstruction";
 import 'boxicons/css/boxicons.min.css';
 import SkillsSection from "../components/homePage/skills_section/SkillsSection";
+import PageSchema from "../components/PageSchema";
 
 function HomePage() {
     return ( 
-        <main className="flex justify-center items-center min-h-screen mt-5
-        flex-col bg-main-div p-12 rounded-4xl gap-10 w-4/5">
+        <PageSchema pageId={0} content={(
             <IntroductionCard/>
             
-        </main>
+        )}/>
      );
+        
 }
 
 export default HomePage;

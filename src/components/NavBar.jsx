@@ -6,7 +6,7 @@ function NavBar() {
                 <li>Home</li>
                 <li>About</li>
                 <li>Projects</li>
-                <li>Contact</li>
+                <li>Contact Me</li>
             </ul>
         </nav>
      );

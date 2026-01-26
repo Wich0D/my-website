@@ -7,6 +7,7 @@ First, run the development server:
 ```bash
 npm install
 npm install boxicons
+npm install react-icons --save
 npm run dev
 # or
 yarn dev

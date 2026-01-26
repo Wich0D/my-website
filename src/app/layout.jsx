@@ -2,6 +2,8 @@ import localFont from 'next/font/local'
 import "./globals.css";
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
+import Link from 'next/link';
+
 
 const glacialIndifference = localFont({
     src: [
@@ -31,10 +33,10 @@ export const metadata = {
 export default function RootLayout({children}){
     return(
         <html lang="en">
-            <body className={glacialIndifference.className}>
+            <body className={` ${glacialIndifference.className}`}>
                 <NavBar />
                 {children}
-                <Footer />
+                <Footer/>
             </body>
         </html>
     )
