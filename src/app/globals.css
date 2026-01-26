@@ -2,10 +2,12 @@
 
 @theme{
   /*Colors*/
+  --color-main-bg: #1f305b;
   --color-main-div: #3c4296;
+  --color-navbar: #132042;
   /*Animations*/
-  --anymate-typing: typing 3.5s steps(40,end) forwards, blink .75s step-end 4;
-  --anymate-typing-last: typing 3.5 steps(40,end) forwards, blink .75s step-end infinite;
+  --anymate-typing: typing 3.5s steps(40,end) forwards, blink .75s step-end 4.5;
+  --anymate-typing-last: typing 3.5s steps(40,end) forwards, blink .75s step-end infinite;
 }
 @keyframes typing {
   from {
@@ -39,11 +41,12 @@
 :root {
   --background: #1f305b;
   --textmaincolor: #fff;
+
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #1f305b;
     --foreground: #ededed;
   }
 }
@@ -52,4 +55,7 @@ body {
   background: var(--background);
   color: var(--textmaincolor);
   font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

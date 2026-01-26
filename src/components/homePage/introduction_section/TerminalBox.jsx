@@ -17,9 +17,9 @@ function TerminalBox() {
         "I hope you enjoy it! <3"
     ]
     return ( 
-        <div className={`flex flex-col flex-1 justify-center tracking-tight rounded-md pt-2 ${fira.className}`}>
-            <div className="bg-[#21242b] pl-2 font-bold"><p>Welcome Console</p></div>
-            <div className="bg-[#282c35] pl-3.5 pr-3.5 pb-10">
+        <div className={`flex flex-col flex-1 justify-center tracking-tight rounded-2xl overflow-hidden  h-fit ${fira.className}`}>
+            <div className="bg-[#21242b] p-1 pl-4  text-sm"><p>Welcome Console</p></div>
+            <div className="bg-[#282c35] pl-3.5 pr-3.5 pb-10 pt-2">
                 {
                     introductionLines.map((text,index)=>(
                     <TerminalAnimatedLine 
