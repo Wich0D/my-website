@@ -8,7 +8,6 @@ function HomePage() {
     return ( 
         <PageSchema pageId={0} content={(
             <IntroductionCard/>
-            
         )}/>
      );
         

@@ -28,7 +28,7 @@ const glacialIndifference = localFont({
 export const metadata = {
     title: 'Wich0D',
     description: 'Prueba de Kext js número 1',
-    keyword: 'tienda, online, ecommerce',
+    keyword: 'wich0d,luis david hernandez consuelo, portfolio',
 }
 export default function RootLayout({children}){
     return(

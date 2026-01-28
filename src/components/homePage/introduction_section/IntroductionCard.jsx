@@ -3,6 +3,10 @@ import TerminalBox from "./TerminalBox";
 import { FaLinkedin } from "react-icons/fa";
 import { FaSquareGithub } from "react-icons/fa6";
 import SectionTitle from "../../SectionTitle";
+import Link from "next/link";
+import CyanButton from "../../CyanButton";
+
+
 function IntroductionCard() {
     return ( 
         <section className="flex flex-col gap-2">
@@ -17,7 +21,7 @@ function IntroductionCard() {
                     />
                 </div>
                 <div className="flex flex-col items-center gap-3">
-                    <SectionTitle text="Welcome to my website!"/>
+                    <SectionTitle text="Welcome to my website!" size={3}/>
                    <TerminalBox /> 
                    <div className="flex flex-col items-center gap-1">
                     <ul className="text-[55px] flex justify-center gap-4 items-center">
@@ -36,7 +40,10 @@ function IntroductionCard() {
                     </ul>
                    </div>
                 </div>
-                
+            </div>
+            <div className="flex min-w-4/5 text-xl font-bold p-8 justify-center gap-10" >
+                <CyanButton text="Download CV" path={"/"} />
+                <CyanButton text="Contact Me" path={"/contact"}/>
             </div>
         </section>
      );

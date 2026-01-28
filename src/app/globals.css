@@ -8,7 +8,7 @@
   --color-main-sky-blue: #3fa9f5;
   --color-navbar: #132042;
   /*Animations*/
-  --anymate-typing: typing 3.5s steps(40,end) forwards, blink .75s step-end 4;
+  --anymate-typing: typing 2.5s steps(40,end) forwards, blink .75s step-end 4;
   --anymate-typing-last: typing 3.5s steps(40,end) forwards, blink .75s step-end infinite;
 }
 @keyframes typing {

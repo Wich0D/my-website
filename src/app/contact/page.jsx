@@ -1,12 +1,12 @@
 import PageSchema from "../../components/PageSchema";
 import UnderConstruction from "../../components/UnderConstruction";
-function ProjectsPage() {
+function ContactPage() {
     return ( 
-        <PageSchema pageId={3} content={(
+        <PageSchema pageId={4} content={(
             <UnderConstruction/>
         )}/>
 
      );
 }
 
-export default ProjectsPage;
+export default ContactPage;
