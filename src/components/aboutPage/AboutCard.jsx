@@ -1,5 +1,6 @@
 import SectionTitle from "../SectionTitle";
 import EducationBox from "./EducationBox";
+import ExperienceCard from "./ExperienceCard";
 
 function AboutCard() {
   // Convertimos el objeto en un Array para poder usar .map()
@@ -15,14 +16,14 @@ function AboutCard() {
   ];
 
   return (
-    <section className="flex flex-col gap-4 items-center text-justify p-4 text-[18px]">
+    <section className="flex flex-col gap-4 items-center text-justify p-4 text-[18px] w-10/12 ">
         <SectionTitle text="About me" size={5} />
         <p>
-            Hi! My name is Luis David Hernández Consuelo. I'm a{" "}
-            <b className="font-bold text-main-cyan">Software Engineer</b> passionate
-            about building scalable solutions and data-driven applications. I have
-            experience in <b className="font-bold text-main-cyan">data analysis</b>{" "}
-            and <b className="font-bold text-main-cyan">software development</b>.
+            Hi! I'm Luis David Hernández Consuelo, a <b className="font-bold text-main-cyan">Software Engineer </b> 
+            dedicated to building <b className="font-bold text-main-cyan">scalable solutions </b> 
+             and <b className="font-bold text-main-cyan">data-driven</b> applications. 
+            I specialize in bridging the gap between robust software development
+            and actionable data analysis to solve complex technical challenges.
         </p>
         <EducationBox/>  
         <div className="text-left w-full border-t-3 pt-4">
@@ -45,6 +46,19 @@ function AboutCard() {
             </li>
             ))}
         </ol>
+        <div className="text-left w-full  mt-4">
+            <SectionTitle text="My Experience" className="" />
+        </div>
+        <div className="w-full flex">
+            <ExperienceCard 
+                imageFileName={"indava_logo.png"}
+                altTextImage={"Indava logo"}
+                title={"Data Analyst"}
+                institution={"Indava"}
+                period={"Apr 2025 - Jan.2026"}
+                activities={["Data Extraction","Data Cleaning","Data analysis","Python scripts","Transformers Agents","APIRest","QA"]}
+            />
+        </div>
     </section>
   );
 }

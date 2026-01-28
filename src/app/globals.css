@@ -9,7 +9,7 @@
   --color-navbar: #132042;
   /*Animations*/
   --anymate-typing: typing 2.5s steps(40,end) forwards, blink .75s step-end 4;
-  --anymate-typing-last: typing 3.5s steps(40,end) forwards, blink .75s step-end infinite;
+  --anymate-typing-last: typing 2.5s steps(40,end) forwards, blink .75s step-end infinite;
 }
 @keyframes typing {
   from {
@@ -62,3 +62,14 @@ body {
   align-items: center;
 }
 
+@layer utilities {
+  
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+  }
+}
