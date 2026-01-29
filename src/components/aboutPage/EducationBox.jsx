@@ -9,7 +9,7 @@ function EducationBox() {
                 <h2 className={`text-3xl flex-1 font-bold mb-5 text-right`}>My college education</h2>
                 <div className="flex justify-center gap-0.5 mb-10">
                 <Image
-                    src="/images/upiicsa_logo.png" 
+                    src="/images/education/upiicsa_logo.png" 
                     alt="UPIICSA" 
                     width={150}
                     height={150}
