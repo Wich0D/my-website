@@ -42,7 +42,15 @@ function IntroductionCard() {
                 </div>
             </div>
             <div className="flex min-w-4/5 text-xl font-bold p-8 justify-center gap-10" >
-                <CyanButton text="Download CV" path={"/"} />
+                <a href={"https://drive.google.com/file/d/1oa6LkifXJqvHylQOeQt4sZI_T2YSI98M/view"} 
+                className="bg-main-cyan p-4 rounded-full cursor-pointer text-main-purple
+                hover:text-white"
+                target="_blank"
+                rel="noopener noreferrer">
+                    <button className="cursor-pointer">
+                    View CV
+                    </button>
+                </a>
                 <CyanButton text="Contact Me" path={"/contact"}/>
             </div>
         </section>

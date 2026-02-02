@@ -1,9 +1,9 @@
 import PageSchema from "../../components/PageSchema";
-import UnderConstruction from "../../components/UnderConstruction";
+import ProjectsCard from "../../components/projectsPage/ProjectsCard";
 function ProjectsPage() {
     return ( 
         <PageSchema pageId={3} content={(
-            <UnderConstruction/>
+            <ProjectsCard/>
         )}/>
 
      );
