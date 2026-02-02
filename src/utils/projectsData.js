@@ -137,11 +137,8 @@ export const project_list = [
            "/images/projects/design_7.png", 
            "/images/projects/design_8.png", 
         ],
-        "src_access": "Public",
-        "src": [
-            "https://www.behance.net/yourprofile",
-            "https://vimeo.com/yourprofile"
-        ]
+        "src_access": false,
+        "src": []
     }
 ]
 
