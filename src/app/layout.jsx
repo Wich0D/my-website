@@ -2,6 +2,7 @@ import localFont from 'next/font/local'
 import "./globals.css";
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
+import { Analytics } from "@vercel/analytics/next"
 import Script from 'next/script'; // Importante para el SEO
 
 const glacialIndifference = localFont({
@@ -64,6 +65,7 @@ export default function RootLayout({ children }) {
             <body className={glacialIndifference.className}>
                 <NavBar />
                 {children}
+                <Analytics/>
                 <Footer />
             </body>
         </html>
