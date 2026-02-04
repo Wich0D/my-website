@@ -6,6 +6,7 @@ First, run the development server:
 
 ```bash
 npm install
+npm install resend
 npm i @vercel/analytics
 npm install swiper
 npm install react-icons --save

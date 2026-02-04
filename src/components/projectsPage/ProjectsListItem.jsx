@@ -8,7 +8,7 @@ function ProjectsListItem({ title, onClick, isSelected }) {
                 isSelected ? " text-main-cyan" : "hover:text-main-cyan"
             }`}
         >
-            <p className="font-bold">{title}</p>
+            <p className="font-bold text-left">{title}</p>
             <MdPlayArrow className={`w-[30px] ${isSelected ? "opacity-100" : "opacity-30"}`}/>
         </li>
     );

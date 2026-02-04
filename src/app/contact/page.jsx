@@ -1,9 +1,9 @@
+import ContactCard from "../../components/contactPage/ContactCard";
 import PageSchema from "../../components/PageSchema";
-import UnderConstruction from "../../components/UnderConstruction";
 function ContactPage() {
     return ( 
         <PageSchema pageId={4} content={(
-            <UnderConstruction/>
+            <ContactCard/>
         )}/>
 
      );

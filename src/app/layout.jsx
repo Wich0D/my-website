@@ -62,7 +62,7 @@ export default function RootLayout({ children }) {
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
                 />
             </head>
-            <body className={glacialIndifference.className}>
+            <body className={`${glacialIndifference.className} min-w-dvw`}>
                 <NavBar />
                 {children}
                 <Analytics/>
