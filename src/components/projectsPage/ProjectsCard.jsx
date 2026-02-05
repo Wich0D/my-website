@@ -12,7 +12,7 @@ function ProjectsCard() {
     const currentProject = projects[selectedIndex];
 
     return ( 
-        <section className="flex flex-col gap-4 items-center text-justify p-0 text-[18px] w-10/12 ">
+        <section className="flex flex-col gap-4 items-center text-justify p-0 text-[18px] w-full ">
             <SectionTitle text="My Projects" size={5} />
             <div className="grid grid-cols-5 border-4 border-main-bg rounded-2xl overflow-hidden">
                 <ul className="bg-main-bg col-span-1 pb-1.5">
@@ -20,6 +20,7 @@ function ProjectsCard() {
                         projects.map((project, index) => (
                             <ProjectsListItem 
                                 key={index} 
+                                index={index+1}
                                 title={project.title} 
                                 isSelected={selectedIndex === index}
                                 onClick={() => setSelectedIndex(index)} 

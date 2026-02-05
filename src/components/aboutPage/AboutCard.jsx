@@ -4,44 +4,53 @@ import EducationBox from "./EducationBox";
 import ExperienceCard from "./ExperienceCard";
 
 function AboutCard() {
-  // Convertimos el objeto en un Array para poder usar .map()
-  const skills = skills_list
+  const skills = skills_list;
 
   return (
-    <section className="flex flex-col gap-4 items-center text-justify p-4 text-[18px] w-10/12 ">
+
+    <section className="flex flex-col gap-6 items-center text-left md:text-justify p-0 md:p-4 text-[16px] md:text-[18px] w-full">
+        
         <SectionTitle text="About me" size={5} />
-        <p>
+        
+        <p className="leading-relaxed">
             Hi! I'm Luis David Hernández Consuelo, a <b className="font-bold text-main-cyan">Software Engineer </b> 
             dedicated to building <b className="font-bold text-main-cyan">scalable solutions </b> 
-             and <b className="font-bold text-main-cyan">data-driven</b> applications. 
+            and <b className="font-bold text-main-cyan">data-driven</b> applications. 
             I specialize in bridging the gap between robust software development
             and actionable data analysis to solve complex technical challenges.
         </p>
-        <EducationBox/>  
-        <div className="text-left w-full border-t-3 pt-4">
-            <SectionTitle text="My Skills" className="" />
+
+        <div className="w-full">
+            <EducationBox/>  
         </div>
 
-        <ol className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-left justify-center w-full">
+        <div className="text-left w-full border-t-2 border-main-cyan/30 pt-6 mt-4">
+            <SectionTitle text="My Skills" />
+        </div>
+
+        <ol className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-center w-full">
             {skills.map((skill, index) => (
-            <li
-                key={index}
-                title={skill.desc} 
-                className="bg-main-cyan text-main-purple rounded-xl p-3 border border-transparent hover:text-white "
-            >
-                <span className=" font-bold block mb-1 ">
-                {skill.name}
-                </span>
-                <p className="text-sm text-gray-700 font-normal leading-tight">
-                {skill.desc}
-                </p>
-            </li>
+                <li
+                    key={index}
+                    title={skill.desc} 
+                    className="bg-main-cyan text-main-purple rounded-xl p-4 border border-transparent 
+                               hover:bg-white hover:scale-[1.02] transition-all cursor-default shadow-lg"
+                >
+                    <span className="font-bold block mb-1 text-lg">
+                        {skill.name}
+                    </span>
+                    <p className="text-sm opacity-90 font-normal leading-tight">
+                        {skill.desc}
+                    </p>
+                </li>
             ))}
         </ol>
-        <div className="text-left w-full  mt-4">
-            <SectionTitle text="My Experience" className="" />
+
+        <div className="text-left w-full mt-8">
+            <SectionTitle text="My Experience" />
         </div>
-        <div className="w-full flex">
+
+        <div className="w-full">
             <ExperienceCard 
                 imageFileName={"indava_logo.png"}
                 altTextImage={"Indava logo"}

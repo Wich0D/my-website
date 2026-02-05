@@ -11,6 +11,8 @@
   /*Animations*/
   --anymate-typing: typing 2s steps(40,end) forwards, blink .75s step-end 2;
   --anymate-typing-last: typing 2s steps(40,end) forwards, blink .75s step-end infinite;
+  /*Breakpoints*/
+  --breakpoint-sc900: 950px;
 }
 @keyframes typing {
   from {

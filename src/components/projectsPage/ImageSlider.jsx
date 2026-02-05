@@ -9,7 +9,7 @@ import Image from 'next/image';
 
 const ImageSlider = ({ slides }) => {
   return (
-    <div className="slider-container" style={{ width: '100%', height: '400px' }}>
+    <div className="slider-container w-full h-[200px] md:h-[400px]">
       <Swiper
         modules={[Navigation, Pagination, Autoplay, EffectFade]}
         spaceBetween={0}
@@ -17,7 +17,7 @@ const ImageSlider = ({ slides }) => {
         navigation
         pagination={{ clickable: true }}
         autoplay={{ delay: 5000 }}
-        effect="slide" // Opcional: cambia a 'slide' si prefieres desplazamiento lateral
+        effect="slide" 
         loop={true}
         style={{ width: '100%', height: '100%' }}
       >

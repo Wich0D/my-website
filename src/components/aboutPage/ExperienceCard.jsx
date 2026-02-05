@@ -25,7 +25,7 @@ function ExperienceCard({
                     <p className="font-bold">Activities</p>
                     <span className="text-sm">{period}</span>
                 </div>
-                <ul className="text-sm list-disc pl-4 grid grid-cols-4"> 
+                <ul className="text-sm list-disc pl-2 md:pl-4 grid grid-cols-2 md:grid-cols-4 gap-0.5"> 
                     {
                         activities.map(act => (
                             <li>{act}</li>

@@ -1,13 +1,12 @@
 import Image from "next/image";
-import SectionTitle from "../SectionTitle";
 import EducationCard from "./EducationCard";
 
 function EducationBox() {
     return ( 
         <section className="flex flex-col gap-3">
             <div className="border-b-3 mt">
-                <h2 className={`text-3xl flex-1 font-bold mb-5 text-right`}>My college education</h2>
-                <div className="flex justify-center gap-0.5 mb-10">
+                <h2 className={`text-3xl flex-1 font-bold mb-5 text-center md:text-right`}>My college education</h2>
+                <div className="flex flex-col md:flex-row justify-center items-center gap-0.5 mb-10">
                 <Image
                     src="/images/education/upiicsa_logo.png" 
                     alt="UPIICSA" 
@@ -16,11 +15,13 @@ function EducationBox() {
                     className="" /> 
                 <div className="text-right ">
                     
-                    <div className="flex gap-2.5">
-                        <h3 className={`text-[20px] flex-1 font-bold `}>UPIICSA - Software Engineering</h3>
-                        <span className="text-sm rounded-full bg-main-cyan p-1.5 text-main-purple font-bold">Aug. 2021 - Jan. 2026</span>
+                    <div className="flex gap-2.5 justify-between md:justify-end text-left md:text-right">
+                        <h3 className={`text-[18px] md:text-[20px] flex-1 font-bold `}>UPIICSA - Software Engineering</h3>
+                        <span className=" flex text-sm rounded-full bg-main-cyan p-0.5 md:p-1.5 text-main-purple font-bold items-center h-fit">
+                            <p>Aug. 2021 - Jan. 2026</p>
+                        </span>
                     </div>
-                    <p className="text-right mt-2.5">
+                    <p className="text-left md:text-right mt-2.5">
                         I have built a solid foundation in the full software development life cycle, 
                         database management, and systems analysis. My training emphasizes interdisciplinary problem-solving, 
                         combining technical coding skills with an understanding of organizational processes to deliver scalable 

@@ -6,7 +6,7 @@ import { sendEmail } from "../../utils/sendEmail";
 
 function ContactCard() {
     return ( 
-        <section className="flex flex-col gap-4 items-center min-w-[600px]">
+        <section className="flex flex-col gap-4 items-center w-full md:min-w-[600px]">
             <SectionTitle text={"Contact me"}/>
             <Image 
                     src="/images/terrier_mascot.png" 

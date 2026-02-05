@@ -1,6 +1,6 @@
 import { MdPlayArrow } from "react-icons/md";
 
-function ProjectsListItem({ title, onClick, isSelected }) {
+function ProjectsListItem({ title, onClick, isSelected,index }) {
     return ( 
         <li 
             onClick={onClick} 
@@ -8,7 +8,11 @@ function ProjectsListItem({ title, onClick, isSelected }) {
                 isSelected ? " text-main-cyan" : "hover:text-main-cyan"
             }`}
         >
-            <p className="font-bold text-left">{title}</p>
+            <div>
+                <p className="font-bold text-left md:hidden">{index}</p>
+                <p className="font-bold text-left hidden md:block">{title}</p>
+            </div>
+            
             <MdPlayArrow className={`w-[30px] ${isSelected ? "opacity-100" : "opacity-30"}`}/>
         </li>
     );

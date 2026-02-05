@@ -3,7 +3,7 @@ import { FaSquareGithub } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
 function Footer() {
     return ( 
-        <nav className="bg-slate-900 text-white flex justify-between items-center p-4 w-full mt-3.5">
+        <footer className="bg-slate-900 text-white flex justify-between items-center p-2 md:p-4 md:pl-6 md:pr-6 w-full mt-3.5">
             <p>© 2026 Luis David Hernández Consuelo. Software Engineer.</p>
             <div className="flex gap-2 items-center">
                 <div className="flex gap-1">
@@ -24,7 +24,7 @@ function Footer() {
                 </a></li>
             </ul>
             </div>
-        </nav>
+        </footer>
      );
 }
 
