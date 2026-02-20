@@ -49,6 +49,32 @@ export const project_list = [
         ]
     }, 
     {
+        "title": "ForoHub / Oracle Next Education",
+        "description": "A fullstack web application designed to facilitate seamless communication and resource sharing among students and educators. The platform features a dynamic forum for discussions and an intuitive user interface that promotes engagement and collaboration within the academic community.",
+        "language": "Spanish",
+        "technologies": [
+            "Java",
+            "Spring Boot",
+            "JavaScript",
+            "CSS",
+            "React",
+            "MySQL",
+            "Insomnia",
+            "GitHub"
+        ],
+        "role": "Owner",
+        "images": [
+            "/images/projects/forohub_1.png",
+            "/images/projects/forohub_2.png",
+            "/images/projects/forohub_3.png",
+        ],
+        "src_access": true,
+        "src": [
+            "https://github.com/Wich0D/Foro_Alura"
+
+        ]
+    }, 
+    {
         "title": "AI-Powered Contract Audit Automator",
         "description": "An end-to-end automation system designed to validate legal contracts in different formats. The pipeline utilizes a dual-LLM architecture: the first LLM identifies and segments complex tables within PDF documents, while the second analyzes the spatial structure (rows and columns). It integrates Tesseract OCR for precise text extraction and leverages Pandas with OpenRouter (LLM) to perform deep semantic analysis and error detection, exporting results to structured CSV formats.",
         "language": "Python",
