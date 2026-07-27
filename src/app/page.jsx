@@ -1,15 +1,22 @@
 import IntroductionCard from "../components/homePage/introduction_section/IntroductionCard";
-//import UnderConstruction from "../components/UnderConstruction";
-import 'boxicons/css/boxicons.min.css';
+import AboutCard from "../components/aboutPage/AboutCard";
+import TechStackTable from "../components/tech_stack/TechStackTable";
+import FeaturedProjects from "../components/projectsPage/FeaturedProjects";
 import PageSchema from "../components/PageSchema";
+import 'boxicons/css/boxicons.min.css';
 
 function HomePage() {
     return ( 
-        <PageSchema pageId={0} content={(
-            <IntroductionCard/>
-        )}/>
+        <div className="flex flex-col w-full">
+            <PageSchema id="home" content={<IntroductionCard />} />
+            
+            <PageSchema id="projects" content={<FeaturedProjects />} />
+            
+            <PageSchema id="tech-stack" content={<TechStackTable />} />
+            
+            <PageSchema id="about" content={<AboutCard />} />
+        </div>
      );
-        
 }
 
 export default HomePage;

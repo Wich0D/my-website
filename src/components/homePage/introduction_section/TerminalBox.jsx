@@ -10,13 +10,10 @@ const fira = Fira_Code({
 function TerminalBox() {
     
     const introductionLines = [
-        "Hi! I'm Luis. Welcome to my website. :)",
-        "I am a Software Engineer and also an artist ",
-        "in my free times, I usually combine these ",
-        "skills to create interesting projects.",
-        "If you want to see some of my work, ",
-        "feel free to explore this website.",
-        "I hope you enjoy it! <3"
+        "Hi! Welcome to my website.",
+        "I build scalable applications",
+        "and data-driven solutions.",
+        "Let's create something amazing!"
     ]
     return ( 
         <div className={`flex flex-col flex-1 justify-center tracking-tight rounded-2xl overflow-hidden  h-fit ${fira.className}`}>
