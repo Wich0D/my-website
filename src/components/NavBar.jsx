@@ -10,9 +10,9 @@ function NavBar() {
 
     const navLinks = [
         { name: "Home", path: "/#home" },
-        { name: "About", path: "/#about" },
-        { name: "Tech Stack", path: "/#tech-stack" },
         { name: "Projects", path: "/#projects" },
+        { name: "Tech Stack", path: "/#tech-stack" },
+        { name: "About", path: "/#about" },
         { name: "Contact Me", path: "/contact" },
     ];
 

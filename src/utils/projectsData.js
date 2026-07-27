@@ -1,7 +1,8 @@
 export const project_list = [
     {
         "title": "Dashboard Generator",
-        "description": "An advanced data analysis platform that transforms CSV uploads into interactive visual dashboards. This project integrates Convai's conversational AI to provide a personalized support chatbot, allowing users to interact with an intelligent agent for guidance on data interpretation and tool navigation, bridging the gap between complex data processing and user accessibility.",        "language": "Spanish",
+        "description": "An advanced data analysis platform that transforms CSV uploads into interactive visual dashboards. This project integrates Convai's conversational AI to provide a personalized support chatbot, allowing users to interact with an intelligent agent for guidance on data interpretation and tool navigation, bridging the gap between complex data processing and user accessibility.",
+        "language": "Spanish",
         "technologies": [
             "Python",
             "Pandas",
@@ -12,6 +13,7 @@ export const project_list = [
             "Convai AI"
         ],
         "role": "Owner",
+        "roles": ["Data Analyst", "Data Scientist", "Web Developer"],
         "images": [
            "/images/projects/dashboard_1.png",
            "/images/projects/dashboard_2.png",
@@ -37,6 +39,7 @@ export const project_list = [
             "Photoshop"
         ],
         "role": "Design Leader / Developer",
+        "roles": ["Software Engineer"],
         "images": [
             "/images/projects/planetario_1.png",
             "/images/projects/planetario_2.png",
@@ -63,6 +66,7 @@ export const project_list = [
             "GitHub"
         ],
         "role": "Owner",
+        "roles": ["Software Engineer", "Web Developer"],
         "images": [
             "/images/projects/forohub_1.png",
             "/images/projects/forohub_2.png",
@@ -71,7 +75,6 @@ export const project_list = [
         "src_access": true,
         "src": [
             "https://github.com/Wich0D/Foro_Alura"
-
         ]
     }, 
     {
@@ -88,6 +91,7 @@ export const project_list = [
             "Prompt Engineering"
         ],
         "role": "LLM Solutions Engineer",
+        "roles": ["Software Engineer", "Data Scientist", "Data Analyst"],
         "images": [
             "/images/projects/contract_1.png",
             "/images/projects/contract_2.png",
@@ -112,6 +116,7 @@ export const project_list = [
             "JSON/CSV Export"
         ],
         "role": "Developer",
+        "roles": ["Software Engineer", "Data Analyst", "Data Scientist"],
         "images": [
             
         ],
@@ -131,6 +136,7 @@ export const project_list = [
             "ETL Pipelines"
         ],
         "role": "Data-Centric",
+        "roles": ["Data Analyst", "Web Developer", "Data Scientist"],
         "images": [
             "/images/projects/ciencia_1.png",
             "/images/projects/ciencia_2.png",
@@ -154,6 +160,7 @@ export const project_list = [
             "Color Grading"
         ],
         "role": "Designer",
+        "roles": ["Others"],
         "images": [
            "/images/projects/design_1.png", 
            "/images/projects/design_2.png", 
@@ -168,7 +175,7 @@ export const project_list = [
     }
 ]
 
-const plantilla = [
+export const plantilla = [
     {
         "title": "",
         "description": "",
@@ -177,6 +184,7 @@ const plantilla = [
             ""
         ],
         "role": "",
+        "roles": [],
         "images": [
 
         ],
