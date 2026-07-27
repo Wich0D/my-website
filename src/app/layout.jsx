@@ -28,13 +28,21 @@ const glacialIndifference = localFont({
 // Metadatos mejorados para SEO
 export const metadata = {
     title: {
-        default: 'Wich0D | Software Engineer',
-        template: '%s | Wich0D'
+        default: 'Luis David Hernández Consuelo (Wich0D) | Portfolio',
+        template: '%s | Luis David Hernández Consuelo'
     },
-    description: 'Portfolio of Luis David Hernández (wich0d), Software Engineer and Data Analyst specializing in scalable solutions.',
-    keywords: ['wich0d', 'luis david hernandez consuelo', 'software engineer', 'data analyst', 'portfolio', 'UPIICSA'],
+    description: 'Portfolio of Luis David Hernández Consuelo, a Software Engineer and Data Analyst specializing in scalable web solutions and data-driven applications.',
+    keywords: ['Luis David Hernandez Consuelo', 'Luis David Hernandez', 'wich0d', 'Software Engineer', 'Data Analyst', 'Portfolio', 'Full Stack Developer', 'UPIICSA'],
     authors: [{ name: 'Luis David Hernández Consuelo', url: 'https://wich0d.vercel.app/' }],
-    creator: 'Wich0D',
+    creator: 'Luis David Hernández Consuelo',
+    openGraph: {
+        title: 'Luis David Hernández Consuelo (Wich0D) | Software Engineer',
+        description: 'Portfolio of Luis David Hernández Consuelo, Software Engineer and Data Analyst.',
+        url: 'https://wich0d.vercel.app/',
+        siteName: 'Luis David Hernández Consuelo Portfolio',
+        locale: 'en_US',
+        type: 'website',
+    }
 }
 
 export default function RootLayout({ children }) {
@@ -65,7 +73,7 @@ export default function RootLayout({ children }) {
             <body className={`${glacialIndifference.className} min-w-dvw`}>
                 <NavBar />
                 {children}
-                <Analytics/>
+                <Analytics />
                 <Footer />
             </body>
         </html>
