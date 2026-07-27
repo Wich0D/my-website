@@ -4,10 +4,12 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaSquareGithub } from "react-icons/fa6";
 import SectionTitle from "../../SectionTitle";
 import CyanButton from "../../CyanButton";
+import RoleSelector from "./RoleSelector";
 
 function IntroductionCard() {
     return ( 
-        <section className="flex flex-col gap-6 md:gap-2 w-full">
+        <section className="flex flex-col gap-6 md:gap-2 w-full mt-4">
+            <RoleSelector />
             <div className="flex flex-col lg:flex-row gap-8 md:gap-15 items-center justify-center">
                 <div className="flex justify-center w-full md:w-auto">
                     <Image 

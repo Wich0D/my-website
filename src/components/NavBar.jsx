@@ -9,10 +9,10 @@ function NavBar() {
     const toggleMenu = () => setIsOpen(!isOpen);
 
     const navLinks = [
-        { name: "Home", path: "/" },
-        { name: "About", path: "/about" },
-        { name: "Tech Stack", path: "/tech_stack" },
-        { name: "Projects", path: "/projects" },
+        { name: "Home", path: "/#home" },
+        { name: "About", path: "/#about" },
+        { name: "Tech Stack", path: "/#tech-stack" },
+        { name: "Projects", path: "/#projects" },
         { name: "Contact Me", path: "/contact" },
     ];
 
