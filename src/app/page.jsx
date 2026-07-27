@@ -14,7 +14,7 @@ function HomePage() {
             
             <PageSchema id="tech-stack" content={<TechStackTable />} />
             
-            <PageSchema id="about" className="bg-main-purple" content={<AboutCard />} />
+            <PageSchema id="about" content={<AboutCard />} />
         </div>
      );
 }
